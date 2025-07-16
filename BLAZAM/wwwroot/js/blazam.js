@@ -91,4 +91,7 @@ window.customAnalyticsEvent = async (eventName, jsonData) => {
     });
 };
 
+Blazor.defaultReconnectionHandler.onConnectionDown = function () {
+    document.getElementById('components-reconnect-modal').style.display = 'flex';
+};
 

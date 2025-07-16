@@ -34,6 +34,17 @@
 <body>
     @RenderBody()
 
+<div id="components-reconnect-modal" class="mud-overlay-scrim" style="display:none;">
+    <div class="mud-paper mud-dialog">
+        <div class="mud-dialog-title">
+            Connection Lost
+        </div>
+        <div class="mud-dialog-content">
+            <div class="spinner"></div>
+            Attempting to reconnect...
+        </div>
+    </div>
+</div>
     <div id="blazor-error-ui">
         @if (!ApplicationInfo.inDebugMode)
         {
